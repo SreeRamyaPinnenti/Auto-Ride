@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From :"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/from"
+        android:textSize="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="39dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="70dp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fromspinner"
+        android:spinnerMode="dropdown"
+        android:layout_below="@+id/from"
+        android:layout_alignLeft="@+id/from"
+        android:layout_alignStart="@+id/from" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To :"
+        android:textSize="25dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/to"
+        android:layout_below="@+id/fromspinner"
+        android:layout_alignLeft="@+id/fromspinner"
+        android:layout_alignStart="@+id/fromspinner" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tospinner"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/to"
+        android:layout_alignStart="@+id/to"
+        android:spinnerMode="dropdown" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proceed"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/proceed"
+        android:layout_marginTop="43dp"
+        android:layout_toRightOf="@+id/to"
+        android:layout_below="@+id/tospinner" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="cost"
+        android:id="@+id/cost1"
+        android:layout_below="@+id/tospinner"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

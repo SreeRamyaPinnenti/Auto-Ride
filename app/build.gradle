@@ -1,0 +1,60 @@
+apply plugin: 'com.android.application'
+//buildscript {
+//    repositories {
+//        maven { url 'https://plugins.gradle.org/m2/'}
+//    }
+//    dependencies {
+//        classpath 'gradle.plugin.com.onesignal:onesignal-gradle-plugin:[0.11.0, 0.99.99]'
+//    }
+//}
+//apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+//
+//repositories {
+//    maven { url 'https://maven.google.com' }
+//}
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+
+    defaultConfig {
+        applicationId "team.project"
+        minSdkVersion 14
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+//        manifestPlaceholders = [
+//                //place key here
+//                onesignal_app_id:'29620a0f-4ef2-443b-858c-0c01e07f6f49',
+//                // Project number pulled from dashboard, local value is ignored.
+//                onesignal_google_project_number: 'REMOTE'
+//        ]
+
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+
+
+    compile 'com.android.support:appcompat-v7:24.0.0-alpha2'
+    compile 'com.google.firebase:firebase-core:16.0.1'
+    compile 'com.google.firebase:firebase-auth:16.0.3'
+    compile 'com.google.firebase:firebase-database:16.0.1'
+    compile 'com.firebase:firebase-client-android:2.3.1'
+    compile 'com.google.firebase:firebase-storage:16.0.1'
+    compile 'com.squareup.picasso:picasso:2.71828'
+    compile 'com.google.android.gms:play-services:8.4.0'
+    //compile 'com.onesignal:OneSignal:[3.9.1, 3.99.99]'
+}
+apply plugin: 'com.google.gms.google-services'
+

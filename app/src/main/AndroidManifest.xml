@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="team.project">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Student_authentication">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Add_point1"></activity>
+        <activity android:name=".Auto_registration"></activity>
+        <activity android:name=".Viewdetails"></activity>
+        <activity android:name=".Available_Auto"></activity>
+        <activity android:name=".Booked_Autos"></activity>
+        <activity android:name=".Auto_student_details"></activity>
+
+    </application>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+</manifest>

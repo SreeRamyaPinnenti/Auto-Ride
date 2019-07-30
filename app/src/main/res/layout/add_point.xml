@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Point"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/addpoint"
+        android:layout_marginTop="78dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="46dp"
+        android:layout_marginStart="46dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD AUTO"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/add_auto"
+        android:layout_below="@+id/addpoint"
+        android:layout_alignStart="@+id/addpoint" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="available"
+        android:id="@+id/available_auto"
+        android:layout_below="@+id/add_auto"
+        android:layout_alignLeft="@+id/add_auto"
+        android:layout_alignStart="@+id/add_auto"
+        android:layout_marginTop="25dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="booked"
+        android:id="@+id/booked_auto"
+        android:layout_below="@+id/available_auto"
+        android:layout_alignRight="@+id/available_auto"
+        android:layout_alignEnd="@+id/available_auto"
+        android:layout_marginTop="32dp" />
+
+</RelativeLayout>
